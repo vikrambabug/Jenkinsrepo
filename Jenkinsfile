@@ -2,6 +2,12 @@ pipeline {
     agent any   // run on any available Jenkins agent
 
     stages {
+        stage('Check Node') {
+            steps {
+                echo "This build is running on: ${env.NODE_NAME}"
+            }
+        }
+        
         stage('Build') {
             steps {
                 echo "Building the project..."
