@@ -29,6 +29,14 @@ pipeline {
                 echo "Delivering the project..."
             }
         }
-    }
+        
+	stage('Deployment') {
+            steps {
+   
+                 echo "Deployment is happened in this pipeline"
+            }
+         }
+}
+
 }
 
