@@ -17,6 +17,12 @@ pipeline {
                 echo "Deploying the project..."
             }
         }
+
+        stage('Delivery') {
+            steps {
+                echo "Delivering the project..."
+            }
+        }
     }
 }
 
