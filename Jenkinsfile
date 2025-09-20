@@ -18,24 +18,6 @@ pipeline {
                 echo "Running tests..."
             }
         }
-        stage('Deploy') {
-            steps {
-                echo "Deploying the project..."
-            }
-        }
-
-        stage('Delivery') {
-            steps {
-                echo "Delivering the project..."
-            }
-        }
-        
-	stage('Deployment') {
-            steps {
-   
-                 echo "Deployment is happened in this pipeline"
-            }
-         }
 }
 
 }
